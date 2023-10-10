@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DigiPlusIT</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fdffbe;
+        }
+
+        div {
+            margin: 10px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        select {
+            width: 200px;
+        }
+
+        input {
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="node-container">
+        <div class="controls">
+            <label for="nodeType">Node Type:</label>
+            <select id="nodeType">
+                <option value="parent">Parent Node</option>
+                <option value="child">Child Node</option>
+                <option value="single">Single Node</option>
+            </select>
+            <input type="text" id="nodeName" placeholder="Node Name">
+            <button id="addNode" style="background-color: rgb(38, 44, 159); color: aliceblue;">Add Node</button>
+            <button id="deleteNode" style="background-color: rgb(38, 44, 159); color: aliceblue;">Delete Node</button>
+            <button id="updateNodeName" style="background-color: rgb(38, 44, 159); color: aliceblue;">Update Node Name</button>
+        </div>
+        <div class="node-display" id="nodeDisplay"></div>
+        <div class="selected-node-display" id="selectedNodeDisplay"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
